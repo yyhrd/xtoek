@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mana
+  name: xiy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mana
+      app: xiy
   template:
     metadata:
       labels:
-        app: mana
+        app: xiy
     spec:
       containers:
-      - image: okteto.dev/mana:latest
-        name: mana
+      - image: okteto.dev/xiy:latest
+        name: xiy
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.ietf.org"
         - name: Vless_UUID
-          value: "dc03c9c0-5364-44c1-b51e-662954551228"
+          value: "85f420c5-6b49-4a0e-84c5-dc99c0256b4a"
         - name: Vless_Path
-          value: "/s233LV29BHGydchf"
+          value: "/s3LV"
         - name: Vmess_UUID
-          value: "dc03c9c0-5364-44c1-b51e-662954551228"
+          value: "85f420c5-6b49-4a0e-84c5-dc99c0256b4a"
         - name: Vmess_Path
-          value: "/s244LV29BHGydchf"
+          value: "/s4Lm"
         - name: Share_Path
           value: "/share233"

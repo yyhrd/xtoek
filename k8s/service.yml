@@ -10,4 +10,4 @@ spec:
   - name: "dep"
     port: 8080
   selector:
-    app: d
+    app: dep

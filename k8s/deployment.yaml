@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - image: okteto.dev/ddu:latest
-        name: 
+        name: ddu
         ports:
         - containerPort: 8080
         env:

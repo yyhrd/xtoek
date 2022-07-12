@@ -10,4 +10,4 @@ spec:
   - name: "ddu"
     port: 8080
   selector:
-    app: 
+    app: ddu

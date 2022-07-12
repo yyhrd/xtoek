@@ -13,7 +13,7 @@ spec:
         app: ddu
     spec:
       containers:
-      - image: okteto.dev/:latest
+      - image: okteto.dev/ddu:latest
         name: 
         ports:
         - containerPort: 8080

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ddu
+  name: dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ddu
+      app: dep
   template:
     metadata:
       labels:
-        app: ddu
+        app: dep
     spec:
       containers:
-      - image: okteto.dev/ddu:latest
-        name: ddu
+      - image: okteto.dev/dep:latest
+        name: d
         ports:
         - containerPort: 8080
         env:

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guog
+  name: mokr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: guog
+      app: mokr
   template:
     metadata:
       labels:
-        app: guog
+        app: mokr
     spec:
       containers:
-      - image: okteto.dev/guog:latest
-        name: guog
+      - image: okteto.dev/mokr:latest
+        name: mokr
         ports:
         - containerPort: 8080
         env:

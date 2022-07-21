@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - image: okteto.dev/uuan:latest
-        name: 
+        name: uuan
         ports:
         - containerPort: 8080
         env:

@@ -10,4 +10,4 @@ spec:
   - name: "ianl"
     port: 8080
   selector:
-    app: 
+    app: ianl

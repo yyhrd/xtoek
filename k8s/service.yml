@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rxuo
+  name: uuan
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "rxuo"
+  - name: "uuan"
     port: 8080
   selector:
-    app: rxuo
+    app: uuan

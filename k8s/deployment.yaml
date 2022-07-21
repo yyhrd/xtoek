@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rxuo
+  name: uuan
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rxuo
+      app: uuan
   template:
     metadata:
       labels:
-        app: rxuo
+        app: uuan
     spec:
       containers:
-      - image: okteto.dev/rxuo:latest
-        name: rxuo
+      - image: okteto.dev/uuan:latest
+        name: 
         ports:
         - containerPort: 8080
         env:

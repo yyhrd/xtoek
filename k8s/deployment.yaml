@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zttk
+  name: rxuo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: zttk
+      app: rxuo
   template:
     metadata:
       labels:
-        app: zttk
+        app: rxuo
     spec:
       containers:
-      - image: okteto.dev/zttk:latest
-        name: zttk
+      - image: okteto.dev/:latest
+        name: rxuo
         ports:
         - containerPort: 8080
         env:

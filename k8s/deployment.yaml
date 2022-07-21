@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cfoj
+  name: ianl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cfoj
+      app: ianl
   template:
     metadata:
       labels:
-        app: cfoj
+        app: ianl
     spec:
       containers:
-      - image: okteto.dev/cfoj:latest
-        name: cfoj
+      - image: okteto.dev/ianl:latest
+        name: 
         ports:
         - containerPort: 8080
         env:

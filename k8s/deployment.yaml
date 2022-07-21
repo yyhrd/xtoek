@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yygs
+  name: mago
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yygs
+      app: mago
   template:
     metadata:
       labels:
-        app: yygs
+        app: mago
     spec:
       containers:
-      - image: okteto.dev/yygs:latest
-        name: yygs
+      - image: okteto.dev/mago:latest
+        name: mago
         ports:
         - containerPort: 8080
         env:

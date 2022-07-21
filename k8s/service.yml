@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ianl
+  name: yiwv
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "ianl"
+  - name: "yiwv"
     port: 8080
   selector:
-    app: ianl
+    app: yiwv

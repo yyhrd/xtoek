@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: trww
+  name: zttk
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: trww
+      app: zttk
   template:
     metadata:
       labels:
-        app: trww
+        app: zttk
     spec:
       containers:
-      - image: okteto.dev/trww:latest
-        name: trww
+      - image: okteto.dev/zttk:latest
+        name: zttk
         ports:
         - containerPort: 8080
         env:

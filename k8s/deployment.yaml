@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mokr
+  name: csoo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mokr
+      app: csoo
   template:
     metadata:
       labels:
-        app: mokr
+        app: csoo
     spec:
       containers:
-      - image: okteto.dev/mokr:latest
-        name: mokr
+      - image: okteto.dev/csoo:latest
+        name: 
         ports:
         - containerPort: 8080
         env:

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bob
+  name: cfoj
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bob
+      app: cfoj
   template:
     metadata:
       labels:
-        app: bob
+        app: cfoj
     spec:
       containers:
-      - image: okteto.dev/bob:latest
-        name: bob
+      - image: okteto.dev/cfoj:latest
+        name: cfoj
         ports:
         - containerPort: 8080
         env:

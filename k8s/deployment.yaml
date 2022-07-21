@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - image: okteto.dev/ianl:latest
-        name: 
+        name: ianl
         ports:
         - containerPort: 8080
         env:

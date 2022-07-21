@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bob
+  name: cfoj
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bob"
+  - name: "cfoj"
     port: 8080
   selector:
-    app: bob
+    app: cfoj

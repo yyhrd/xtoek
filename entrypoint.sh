@@ -22,7 +22,7 @@ fi
 echo ${Vmess_Path}
 
 if [[ -z "${Vmess_UUID}" ]]; then
-  Vmess_UUID=""
+  Vmess_UUID="02174ad7-e63b-496d-86fd-f4453db8b0ea"
 fi
 echo ${Vmess_UUID}
 

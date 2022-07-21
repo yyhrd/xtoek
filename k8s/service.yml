@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: neyj
+  name: guog
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "neyj"
+  - name: "guog"
     port: 8080
   selector:
-    app: neyj
+    app: guog

@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.ietf.org"
         - name: Vless_UUID
-          value: "4cc9c0f6-fab3-43d0-916c-2c54d182e0d0"
+          value: "fa66daeb-cad6-400a-9d0f-57f4d846787b"
         - name: Vless_Path
-          value: "/zloo"
+          value: "/4vsl"
         - name: Vmess_UUID
-          value: "4cc9c0f6-fab3-43d0-916c-2c54d182e0d0"
+          value: "fa66daeb-cad6-400a-9d0f-57f4d846787b"
         - name: Vmess_Path
-          value: "/zmoo"
+          value: "/4vsm"
         - name: Share_Path
           value: "/share233"

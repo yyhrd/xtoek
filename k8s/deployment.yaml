@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: csoo
+  name: rzoh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: csoo
+      app: rzoh
   template:
     metadata:
       labels:
-        app: csoo
+        app: rzoh
     spec:
       containers:
-      - image: okteto.dev/csoo:latest
-        name: csoo
+      - image: okteto.dev/rzoh:latest
+        name: rzoh
         ports:
         - containerPort: 8080
         env:

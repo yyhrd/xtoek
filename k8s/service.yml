@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: yiwv
+  name: daibo
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "yiwv"
+  - name: "daibo"
     port: 8080
   selector:
-    app: yiwv
+    app: 

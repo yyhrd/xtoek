@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rair
+  name: yygs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rair
+      app: yygs
   template:
     metadata:
       labels:
-        app: rair
+        app: yygs
     spec:
       containers:
-      - image: okteto.dev/rair:latest
-        name: rair
+      - image: okteto.dev/yygs:latest
+        name: yygs
         ports:
         - containerPort: 8080
         env:

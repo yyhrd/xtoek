@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ianl
+  name: yiwv
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ianl
+      app: yiwv
   template:
     metadata:
       labels:
-        app: ianl
+        app: yiwv
     spec:
       containers:
-      - image: okteto.dev/ianl:latest
-        name: ianl
+      - image: okteto.dev/yiwv:latest
+        name: yiwv
         ports:
         - containerPort: 8080
         env:

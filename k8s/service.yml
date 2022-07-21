@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: uuan
+  name: rair
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "uuan"
+  - name: "rair"
     port: 8080
   selector:
-    app: uuan
+    app: rair

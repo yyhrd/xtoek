@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: trww
+  name: zttk
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "trww"
+  - name: "zttk"
     port: 8080
   selector:
-    app: trww
+    app: zttk

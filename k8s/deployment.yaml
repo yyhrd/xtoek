@@ -25,10 +25,10 @@ spec:
         - name: Vless_UUID
           value: "02174ad7-e63b-496d-86fd-f4453db8b0ea"
         - name: Vless_Path
-          value: "/s3LV"
+          value: "/6lls"
         - name: Vmess_UUID
           value: "02174ad7-e63b-496d-86fd-f4453db8b0ea"
         - name: Vmess_Path
-          value: "/s4Lm"
+          value: "/smm6"
         - name: Share_Path
           value: "/share233"

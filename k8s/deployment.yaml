@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uuan
+  name: rair
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: uuan
+      app: rair
   template:
     metadata:
       labels:
-        app: uuan
+        app: rair
     spec:
       containers:
-      - image: okteto.dev/uuan:latest
-        name: uuan
+      - image: okteto.dev/rair:latest
+        name: rair
         ports:
         - containerPort: 8080
         env:

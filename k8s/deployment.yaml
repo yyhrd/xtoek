@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rzoh
+  name: trww
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rzoh
+      app: trww
   template:
     metadata:
       labels:
-        app: rzoh
+        app: trww
     spec:
       containers:
-      - image: okteto.dev/rzoh:latest
-        name: rzoh
+      - image: okteto.dev/trww:latest
+        name: 
         ports:
         - containerPort: 8080
         env:

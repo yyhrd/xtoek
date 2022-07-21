@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - image: okteto.dev/guog:latest
-        name: 
+        name: guog
         ports:
         - containerPort: 8080
         env:

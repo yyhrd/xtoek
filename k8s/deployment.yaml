@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mago
+  name: yayu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mago
+      app: yayu
   template:
     metadata:
       labels:
-        app: mago
+        app: yayu
     spec:
       containers:
-      - image: okteto.dev/mago:latest
-        name: mago
+      - image: okteto.dev/yayu:latest
+        name: yayu
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.ietf.org"
+          value: "mirror.umd.edu"
         - name: Vless_UUID
           value: "fa66daeb-cad6-400a-9d0f-57f4d846787b"
         - name: Vless_Path

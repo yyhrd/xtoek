@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: daibo
+  name: neyj
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: daibo
+      app: neyj
   template:
     metadata:
       labels:
-        app: daibo
+        app: neyj
     spec:
       containers:
-      - image: okteto.dev/daibo:latest
-        name: daibo
+      - image: okteto.dev/neyj:latest
+        name: neyj
         ports:
         - containerPort: 8080
         env:

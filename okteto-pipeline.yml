@@ -1,4 +1,4 @@
 deploy:
-  - okteto build -t okteto.dev/cfoj:latest
+  - okteto build -t okteto.dev/ianl:latest
   - kubectl apply -f k8s/service.yml
   - envsubst < k8s/deployment.yaml | kubectl apply -f -

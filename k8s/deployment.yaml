@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yiwv
+  name: daibo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yiwv
+      app: daibo
   template:
     metadata:
       labels:
-        app: yiwv
+        app: daibo
     spec:
       containers:
-      - image: okteto.dev/yiwv:latest
-        name: yiwv
+      - image: okteto.dev/daibo:latest
+        name: 
         ports:
         - containerPort: 8080
         env:
